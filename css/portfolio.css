@@ -1,0 +1,700 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;500;600;800&display=swap');
+*,*::after,*::before {
+	box-sizing:border-box;
+}
+html {
+	scroll-behavior:smooth;
+	scroll-padding-top:200px;
+}
+a {
+	text-decoration:none;
+	color:#000;
+	font-family:"Noto Sans",sans-serif;
+}
+h2 {
+	text-align:center;
+	font-size:1.8rem;
+	background:linear-gradient(45deg,#FF8660,#9A33FF);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-clip:text;
+	color:transparent;
+	font-family:"Poppins",sans-serif;
+	padding-bottom:10px;
+	margin:0 auto;
+}
+p {
+	width:50%;
+	margin:0 auto;
+	font-family: "Noto Sans",sans-serif;
+}
+/* TOP NAVIGATION */
+#header {
+	width:100%;
+	height:70px;
+	line-height:70px;
+	position:fixed;
+	top:0;
+	background:rgba(255,255,255,0.4);
+	backdrop-filter:blur(10px);
+	box-shadow:rgba(99,99,99,0.2) 0px 2px 8px 0px;
+	z-index:10000;
+}
+#header ul {
+	display:flex;
+	justify-content: center;
+	gap: 10%;
+	width:80%;
+	margin:0 auto;
+}
+#header ul li {
+	transition:transform 0.2s;
+}
+#header ul li:hover {
+	transform:scale(1.2);
+}
+#header ul li a {
+	font-size:0.9rem;
+	color:grey;
+	font-weight:bold;
+}
+#header ul li a:hover {
+	color:#000;
+}
+body.modal-open #header ul li a {
+	color: #fff;
+}
+
+/* MAIN */
+#main {
+	width:100%;
+}
+h1 {
+	color:#000;
+	text-align:center;
+	font-size:2.5rem;
+	padding-top:200px;
+	font-family:"Noto Sans",sans-serif;
+}
+h1::after {
+	content:"|";
+	animation:blink 0.7s infinite;
+}
+span.typed-cursor {
+	display:none;
+}
+span.typingSpan {
+	font-weight:bold;
+	background:linear-gradient(45deg,#FF8660,#9A33FF);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-clip:text;
+	color:transparent;
+	font-size:3rem;
+	font-family:"Poppins",sans-serif;
+}
+.itd {
+	color:#000;
+	font-size:0.9rem;
+	width:80%;
+	line-height:2.5;
+	padding-top:50px;
+	text-align:center;
+	font-size: 1rem;
+}
+#download {
+	width:100%;
+	text-align:center;
+	padding-top:80px;
+}
+#download a {
+	font-size:1rem;
+	padding:15px 40px;
+	border-radius:50px;
+	font-weight:bold;
+	color:#fff;
+	background:linear-gradient(45deg,#FF8660,#9A33FF);
+	box-shadow:rgba(0,0,0,0.35) 0px 5px 15px;
+	font-family:"Poppins"
+}
+.xi-folder-download-o {
+	font-size:2rem;
+	vertical-align: middle;
+}
+
+/* INTRODUCE */
+#intro {
+	width:100%;
+	margin-top:100px;
+	scroll-margin-top:-150px;
+	background:rgba(246,247,251,1);
+	padding-top:100px;
+	padding-bottom:100px;
+	box-shadow:rgba(60,64,67,0.3) 0px 1px 2px 0px,rgba(60,64,67,0.15) 0px 2px 6px 2px;
+}
+h5 {
+	font-size:1.2rem;
+	font-family:"Poppins",sans-serif;
+	text-align:center;
+	padding-bottom:50px;
+}
+.underLine {
+	width:70px;
+	height:2px;
+	background:rgb(230,230,230);
+	margin:10px auto;
+}
+#intro>ul {
+	width: 80%;
+	max-width:400px;
+	margin:0 auto;
+	background:#fff;
+	border-radius:20px;
+	box-shadow:rgba(100,100,111,0.2) 0px 7px 29px 0px;
+	padding:30px;
+}
+#intro ul li {
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.introbox {
+	width: 220px;
+	margin:0 auto;
+	display:flex;
+	align-items:center;
+	width:75%;
+}
+.introbox i {
+	font-size:1.1rem;
+	color:#000;
+}
+
+.introbox p {
+	margin:0;
+	font-size:0.8rem;
+	padding-left:10px;
+	color:#000;
+}
+.introbox p:last-child {
+	font-family:"Poppins",sans-serif;
+}
+.contact {
+	width:100%;
+	text-align:center;
+	padding-top:30px;
+}
+.contact>ul {
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+.contact>ul>li>a>i {
+	font-size:1.8rem;
+	font-weight: bold;
+}
+
+/* SKILL */
+.skillinfo {
+	font-weight:bold;
+	text-align:center;
+	font-size:0.9rem;
+	width:100%;
+	padding-top:20px;
+}
+#skill {
+	width:100%;
+	scroll-margin-top:-150px;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+#skillbox {
+	width:80%;
+	margin:0 auto;
+	padding-top:100px;
+}
+.skill-list {
+	display:flex;
+	width:95%;
+	max-width:800px;
+	justify-content:center;
+	flex-wrap:wrap;
+	gap:20px;
+	margin:0 auto;
+	color:#000;
+	align-items:center;
+}
+.mini-box {
+	background:rgb(255,255,255);
+	border-radius:18px;
+	border:2px solid rgb(235,235,235);
+	font-size:0.8rem;
+	line-height: 1;
+	padding:5px 15px;
+	box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
+	font-weight:bold;
+	display:flex;
+	justify-content:center;
+	gap:5px;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	align-items: center;
+}
+.mini-box img {
+	width:20px;
+}
+.mini-box::before {
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	z-index:-1;
+	background:linear-gradient(45deg,#FF8660,#9A33FF);
+	transition:width 2s cubic-bezier(0.34,1.56,0.64,1);
+	opacity:0.5;
+	width:var(--level,0%);
+}
+#skillbox2 {
+	width:65%;
+	padding-top:80px;
+	text-align:center;
+	margin:0 auto;
+}
+.skill-list2 {
+	font-size:0.9rem;
+	line-height: 2;
+}
+
+/* PROJECT */
+#project {
+	width:100%;
+	scroll-margin-top:-150px;
+	background:rgba(246,247,251,1);
+	padding-top:100px;
+	padding-bottom:100px;
+	box-shadow:rgba(60,64,67,0.3) 0px 1px 2px 0px,rgba(60,64,67,0.15) 0px 2px 6px 2px;
+}
+#projectbox ul {
+	width:70%;
+	margin:0 auto;
+}
+#projectbox ul li {
+	width:100%;
+	position:relative;
+	margin:50px auto;
+	color:#333;
+	font-family:"Poppins",sans-serif;
+}
+#projectbox ul li img {
+	width:100%;
+	display:block;
+	border-radius:20px;
+	box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+#projectbox ul li div {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	backdrop-filter:blur(10px);
+	opacity:0;
+	transform:translateY(10px);
+	transition:all 0.3s ease;
+	border-radius:20px;
+	padding:30px;
+	background:linear-gradient(to right,rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.4) 75%,rgba(255,255,255,0) 100%);
+}
+#projectbox ul li:hover div {
+	opacity:1.2;
+	transform:translateY(0px);
+}
+#projectbox ul li div p {
+	font-size:0.8rem;
+	width:100%;
+	line-height:1.8;
+	font-family:"Poppins","Noto Sans",sans-serif;
+}
+span.title {
+	font-size:1.2rem;
+	font-weight:bold;
+}
+span.text {
+	display:block;
+	padding-top:20px;
+	line-height:2;
+}
+.p,.p_mobile {
+	display:none;
+}
+.projectSite {
+	position:absolute;
+	bottom:20px;
+	right:120px;
+	background:rgba(255,255,255,0.2);
+	backdrop-filter:blur(10px);
+	border:2px solid rgba(255,255,255,0.4);
+	border-radius:20px;
+	padding:8px 12px;
+	box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+	color:#333;
+	font-family:"Noto Sans",sans-serif;
+	font-size:0.8rem;
+	font-weight:bold;
+}
+.projectBtn {
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	background:rgba(255,255,255,0.2);
+	backdrop-filter:blur(10px);
+	border:2px solid rgba(255,255,255,0.4);
+	border-radius:20px;
+	padding:8px 12px;
+	box-shadow:rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+	color:#333;
+	font-family:"Noto Sans",sans-serif;
+	font-size:0.8rem;
+	font-weight: bold;
+}
+
+/* CAREER */
+#career {
+	width:100%;
+	scroll-margin-top:-150px;
+	background:rgba(246,247,251,1);
+	padding-top:100px;
+	padding-bottom:100px;
+	box-shadow:rgba(60,64,67,0.3) 0px 1px 2px 0px,rgba(60,64,67,0.15) 0px 2px 6px 2px;
+}
+h4 {
+	font-size:1.2rem;
+	font-family:"Poppins",sans-serif;
+	margin-bottom:30px;
+}
+#careerbox {
+	width:90%;
+	margin:0 auto;
+	padding-top:50px;
+}
+#careerbox ul {
+	margin-bottom:200px;
+	gap:20px;
+	display:flex;
+}
+#careerbox ul li {
+	padding-left:10px;
+	line-height:2;
+	font-family:"Noto Sans",sans-serif;
+	font-size:0.9rem;
+}
+.work {
+	position:relative;
+	font-size:0.7rem;
+	font-weight:bold;
+	padding-top:50px;
+	width:60px;
+	text-align:center;
+}
+.work::before {
+	content:"";
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	width:50px;
+	height:50px;
+	background:rgba(255,255,255);
+	border-radius:100%;
+	border:1px solid lightgray;
+}
+.work::after {
+	content:"";
+	position:absolute;
+	top:120px;
+	left:50%;
+	transform:translateX(-50%);
+	width:1px;
+	height:100px;
+	background:lightgray;
+}
+.edu {
+	position:relative;
+	font-size:0.7rem;
+	padding-top:50px;
+	text-align:center;
+	width:60px;
+}
+.edu>img {
+	width:30px;
+	position:absolute;
+	top:10px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.edu::before {
+	content:"";
+	position:absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	width:50px;
+	height:50px;
+	background:rgba(255,255,255);
+	border-radius:100%;
+	border:1px solid lightgray;
+}
+.edu::after {
+	content:"";
+	position:absolute;
+	top:110px;
+	left:50%;
+	transform:translateX(-50%);
+	width:1px;
+	height:100px;
+	background: lightgray;
+}
+
+/* EMAIL */
+#email {
+	width:100%;
+	scroll-margin-top:-150px;
+	padding-top:100px;
+	padding-bottom:100px;
+	text-align:center;
+}
+#email form {
+	width:90%;
+	margin:0 auto;
+	max-width:500px;
+}
+#email input {
+	border:2px solid lightgray;
+	width:100%;
+	height:30px;
+	border-radius:5px;
+	padding:10px;
+	font-size:0.8rem;
+	color:gray;
+	background:rgba(255,255,255,0.5);
+	backdrop-filter:blur(10px);
+	outline:none;
+	margin-bottom:20px;
+	font-family:"Noto Sans",sans-serif;
+}
+#email textarea {
+	border:2px solid lightgray;
+	width:100%;
+	height:200px;
+	border-radius:5px;
+	padding:10px;
+	font-size:0.8rem;
+	color:gray;
+	background:rgba(255,255,255,0.5);
+	backdrop-filter:blur(10px);
+	font-family:"Noto Sans",sans-serif;
+	outline:none;
+}
+.email-txt {
+	text-align:left;
+	width:100%;
+	margin-bottom:10px;
+	font-weight:bold;
+	font-size:0.8rem;
+	font-family:"Noto Sans",sans-serif;
+}
+#email form>button {
+	background:rgb(0,0,0);
+	color:#fff;
+	border:none;
+	font-family:"Noto Sans",sans-serif;
+	padding:10px 15px;
+	margin-top:10px;
+	border-radius: 20px;
+}
+
+/* TOP BUTTON */
+#top-button {
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+}
+#top-button p {
+	font-weight:bold;
+	font-family:"Poppins",sans-serif;
+	color:#000;
+}
+.xi-caret-up {
+	font-size:2rem;
+	font-weight:bold;
+	color: #000;
+}
+
+/* FOOTER */
+#foot {
+	border-top:3px dotted lightgray;
+	padding:30px 0;
+}
+#foot>p {
+	font-size:0.7rem;
+	text-align: center;
+}
+
+/* 420PX */
+@media screen and (min-width:420px) {
+	h2,h5 {
+		font-size: 2rem;
+	}
+	/*메뉴*/
+	#menu {
+		max-width:700px;
+	}
+	#menubox a {
+		font-size: 0.9rem;
+	}
+	/*스킬*/
+	.skillinfo {
+		font-size:1.3rem;
+	}
+	.skill-list2 {
+		line-height: 2.5;
+	}
+
+	/*이메일*/
+	h3 {
+		font-size:1.8rem;
+	}
+	.contactinfo {
+		font-size:1rem;
+	}
+	#contactbox ul li {
+		font-size: 0.9rem;
+	}
+}
+
+/* 740PX */
+@media screen and (min-width:740px) {
+	/* TOP NAVIGATION */
+	#menubox a {
+		font-size: 1rem;
+	}
+
+	/* MAIN */
+	.itd {
+		width:600px;
+	}
+	#download {
+		padding-top: 120px;
+	}
+	
+	/* PROJECT */
+	#projectbox {
+		width:100%;
+	}
+	#projectbox ul {
+		display:flex;
+		flex-wrap:wrap;
+		width:700px;
+	}
+	#projectbox ul li {
+		width: 47%;
+	}
+
+	/* CAREER */
+	#careerbox {
+		width: 600px;
+	}
+}
+
+/* 1200PX */
+@media screen and (min-width:1200px) {
+	h2,h5 {
+		font-size: 2.5rem;
+	}
+	/*메뉴*/
+	#header ul li a {
+		z-index:99999;
+	}
+	.idt {
+		font-size: 1.5rem;
+	}
+	/*소개*/
+	.introbox i {
+		font-size:1.3rem;
+		color:#000;
+	}
+	.introbox p {
+		margin:0;
+		font-size:1rem;
+		padding-left:10px;
+		color:#000;
+	}
+	#download a {
+		font-size:1.2rem;
+	}
+	.xi-folder-download-o {
+		font-size:2.5rem;
+	}
+	.skill-list {
+		gap: 35px;
+	}
+	
+	/* CAREER */
+	h4 {
+		font-size:1.5rem;
+	}
+	
+	.work {
+		position:relative;
+		font-size:1em;
+	}
+	.edu {
+		position:relative;
+		padding-top:50px;
+		text-align:center;
+		width: 60px;
+	}
+	
+	/* EMAIL*/
+	h3 {
+		font-size:2rem;
+	}
+
+	.email-txt {
+		font-size:1rem;
+	}
+	#email form>button {
+		font-size: 1rem;
+	}
+}
+
+/* 1600PX */
+@media screen and (min-width:1600px) {
+	/*프로젝트*/
+	#projectbox {
+		width:100%;
+	}
+	#projectbox ul {
+		width:70%;
+		margin:0 auto;
+	}
+	#projectbox ul li {
+		width: 26%;
+	}
+}
+
+/* ANIMATION */
+@keyframes blink {
+	50% {
+		opacity:0;
+	}
+}
+.wp2 {
+	visibility:hidden;
+}
+.fadeIn {
+	visibility: visible;
+}
